@@ -1,11 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-
+import ReactDOM from "react-dom";
 import App from "./App";
+import { Providers } from "../src/providers";
+import { BrowserRouter } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <BrowserRouter>
+      <Providers>
+        <App />
+      </Providers>
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
