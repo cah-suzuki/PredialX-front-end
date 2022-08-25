@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# PredialX
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#
 
-## Available Scripts
+> Projeto front-end desenvolvido como parte de teste técnico para a empresa find me.
 
-In the project directory, you can run:
+### Tabela de Conteúdos
 
-### `yarn start`
+- [PredialX](#predialx)
+    - [Tabela de Conteúdos](#tabela-de-conteúdos)
+  - [1. Visão Geral](#1-visão-geral)
+        - [Visão geral do projeto, um pouco das tecnologias usadas.](#visão-geral-do-projeto-um-pouco-das-tecnologias-usadas)
+        - [Ferramentas de gerenciamento de projeto utilizadas](#ferramentas-de-gerenciamento-de-projeto-utilizadas)
+  - [2. Início Rápido](#2-início-rápido)
+    - [2.1. Instalando Dependências](#21-instalando-dependências)
+    - [2.2. Variáveis de Ambiente](#22-variáveis-de-ambiente)
+      - [Desenvolvido por](#desenvolvido-por)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 1. Visão Geral
 
-### `yarn test`
+##### Visão geral do projeto, um pouco das tecnologias usadas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [NodeJS](https://nodejs.org/en/)
+- [Express](https://expressjs.com/pt-br/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [TypeORM](https://typeorm.io/)
+- [Yup](https://www.npmjs.com/package/yup)
 
-### `yarn build`
+![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### Ferramentas de gerenciamento de projeto utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Ferramenta | Link                      |
+| ---------- | ------------------------- |
+| GitHub     | https://github.com/       |
+| Notion     | https://www.notion.so/    |
+| Diagrams   | https://app.diagrams.net/ |
+| Trello     | https://trello.com/       |
+| LinkTree   | https://linkr.bio/        |
+| Slack      | https://slack.com/        |
 
-### `yarn eject`
+## 2. Início Rápido
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[ Voltar para o topo ](#tabela-de-conteúdos)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2.1. Instalando Dependências
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone o projeto em sua máquina e instale as dependências com o comando:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```shell
+yarn
+```
 
-## Learn More
+### 2.2. Variáveis de Ambiente
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Em seguida, crie um arquivo **.env**, copiando o formato do arquivo **.env.example**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+cp .env.example .env
+```
 
-### Code Splitting
+Configure suas variáveis de ambiente com suas credenciais do Postgres e uma nova database da sua escolha.
+Certifique-se de que o back-end está rodando e use o script yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Desenvolvido por
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Camila Suzuki | https://github.com/cah-suzuki
